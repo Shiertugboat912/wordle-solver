@@ -3,6 +3,7 @@ import Grid from './components/grid.jsx';
 import Suggest from './components/suggest';
 import a from './data/data.js'
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet'
 var globiter = 1;
 var notinlist = [];
 var istherebutnotcorrect = [];
@@ -196,10 +197,15 @@ function checknSuggest() {
 
 }
 function App() {
+
   const [words, setWords] = useState("");
 
   return (
+
     <div className='cont'>
+      <Helmet>
+        <title>Wordle-solver</title>
+      </Helmet>
       <h1>Wordle Solver Lite</h1>
       <Grid />
       <br></br>
