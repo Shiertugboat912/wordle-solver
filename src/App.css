@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+.cont {
+  text-align: center;
+}
+button {
+  margin-top: 1rem;
+  background: #0066a2;
+  color: white;
+  border-style: outset;
+  border-color: #0066a2;
+  height: 50px;
+  width: 100px;
+  font: bold15px arial, sans-serif;
+  text-shadow: none;
+}
+
+p {
+ margin: auto;
+}
